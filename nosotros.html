@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoioCoin</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&family=Open+Sans&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <link href="./assets/css/style-light.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header class="row">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white">
+          <div class="container">
+            <a href="./index.html"><img src="./assets/img/logo-fondo.png" width="110" height="110" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-link-6" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#planes">Planes de ahorro</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#tarjetas">Tarjetas</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#licencias">Licencias</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#depositar">Como depositar</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#presencia">Presencia Internacional </a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#acciones">Adquiere Acciones</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#divisas">Cambio de Divisas</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#empresas">PoioCoin para empresas</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link-6" href="./compras.html">Compras</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="nosotrosDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
+                    <li><a class="dropdown-item text-link-6" href="./nosotros.html#quienes">¿Quienes somos?</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./nosotros.html#politicas"
+                        >Políticas de privacidad <i class="bx bxs-lock-open-alt"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./nosotros.html#terminos"
+                        >Términos de uso <i class="bx bxs-pen"></i
+                      ></a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="nosotros.html#contacto"
+                        >Contacto <i class="bx bxs-phone-call"></i
+                      ></a>
+                    </li>
+                    <li><a class="dropdown-item text-link-6" href="nosotros.html#equipo">Nuestro equipo de trabajo</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="noticias.html">Noticias <i class="bx bxs-book-content"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="noticias.html#testimonio"
+                        >Testimonios <i class="bx bxs-user-voice"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Usuario
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./ingresar.html">Ingresar <i class="bx bxs-key"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./registro.html">Registrarme <i class="bx bxs-pen"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./capacitacion.html"
+                        >Capacitacion <i class="bx bx-glasses-alt"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="btn ms-2 btn-6 py-0 px-1 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="modoDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Modo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="modoDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Dark <i class="bx bxs-moon"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Light <i class="bx bxs-sun"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control ms-3 me-1 text6" type="search" placeholder="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <div class="social-links mt-sm-3 mt-lg-0">
+                <a href="#" class="twitter"
+                  ><img style="margin-top: -11.6px" width="35" src="./assets/img/espain.png" alt=""
+                /></a>
+                <a href="https://twitter.com/poiocoin" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/poiocoin0" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div id="quienes" style="margin-top: 120px" class="row p-lg-5">
+        <div class="col-sm-12 p-5">
+          <p class="h2 font3 text-center text6 mt-3">¿Que es PoioCoin?</p>
+          <br />
+          <p style="text-align: justify">
+            <strong>Poiocoin</strong> fue creada en 2015 por el programador <strong>Andrés Sánchez</strong>, con la perspectiva de
+            crear un instrumento para aplicaciones descentralizadas y colaborativas. Poiocoin, es un token que puede ser utilizado
+            en transacciones que usen este software. como bitcoin, Poio existe como parte de un sistema financiero autónomo de
+            pares, libre de intervención gubernamental. también como bitcoin, el valor de Poio se disparó en un corto periodo de
+            tiempo. <br /><br />
+            Poiocoin es una moneda digital revolucionaria. Puede enviarse fácilmente, a través de internet, de una persona a otra
+            con total seguridad. Al ser transacciones instantáneas, puede enviar monedas desde Melbourne a Mumbai o desde Madrid a
+            Mineápolis, en segundos. Es fácil de usar y seguro, además puede ser utilizado en tiendas online, donde puede comprar
+            regalos, alimentos, servicios y muchas cosas.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Banca para todos <i class="bx bxs-bank"></i></p>
+          <p style="text-align: justify">
+            No todo el mundo tiene acceso a los servicios financieros, pero todo lo que necesitas para acceder a Poiocoin y a sus
+            productos de préstamo y ahorro es una conexión a Internet.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Un Internet más privado <i class="bx bxs-lock-alt"></i></p>
+          <p style="text-align: justify">
+            No tienes que proporcionar todos tus datos personales para usar una app de Poiocoin. Poiocoin está construyendo una
+            economía basada en el valor, no en la vigilancia.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Una red de pares <i class="bx bx-group"></i></p>
+          <p style="text-align: justify">
+            Poiocoin te permite mover dinero o llegar a acuerdos directamente con otra persona. No necesitas pasar por empresas
+            intermediarias.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Resistente a la censura <i class="bx bx-shield-alt-2"></i></p>
+          <p style="text-align: justify">
+            Ningún gobierno o empresa tiene control sobre Poiocoin. Esta descentralización hace casi imposible que alguien te
+            impida recibir pagos o utilizar servicios en Poiocoin.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Garantías comerciales <i class="bx bx-store"></i></p>
+          <p style="text-align: justify">
+            Ethereum crea un campo de juego más equilibrado. Los clientes tienen un seguro, una garantía integrada por la cual los
+            fondos solo cambiarán de manos si proporcionas lo que se acordó. No necesitas gran influencia empresarial para hacer
+            negocios.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <p class="h4 font3 text-center text4">Compatibilidad para la victoria <i class="bx bx-trending-up"></i></p>
+          <p style="text-align: justify">
+            Se están creando continuamente mejores productos y experiencias, porque los productos Poiocoin son compatibles de
+            forma predeterminada. Las empresas pueden basarse en el éxito de los demás.
+          </p>
+        </div>
+      </div>
+
+      <div id="contacto" class="row mb-3">
+        <p class="h4 font3 text-center text4">Contactanos</p>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <label for="email" class="h5 font3 text6 form-label">Asunto:</label>
+          <input type="text" class="form-control" placeholder="Ingrese asunto" />
+          <br /><br />
+          <label for="email" class="h5 font3 text6 form-label">Correo electronico</label>
+          <input type="email" class="form-control" placeholder="Ingrese su correo" name="email" />
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <label for="email" class="h5 font3 text6 form-label">Nombres:</label>
+          <input type="text" class="form-control" placeholder="Ingrese Nombres" />
+          <br /><br />
+          <label for="email" class="h5 font3 text6 form-label">Whatsapp:</label>
+          <input type="text" class="form-control" placeholder="Ingrese Whatsapp" />
+        </div>
+        <div class="col-sm-12 text-center col-lg-6 centrar mt-0 mb-5 pb-5 px-5">
+          <label for="email" class="h5 font3 text6 form-label">Descripcion:</label>
+          <textarea class="form-control" placeholder="Ingrese Descripcion"></textarea>
+          <br />
+          <button class="btn btn-primary py-2 px-5" type="submit">Enviar</button>
+        </div>
+      </div>
+
+      <div id="equipo" class="row mb-3">
+        <p class="h2 font3 text-center text6 mt-3">Nuestro Equipo de Trabajo</p>
+        <br />
+        <div class="col-sm-12 centrar col-md-6 p-5">
+          <div class="card centrar" style="width: 18rem">
+            <img src="./assets/img/equipo/Sebastian.jpg" class="card-img-top" alt="..." width="320" height="auto" />
+            <div class="card-body">
+              <p class="h4 font3 text6 mt-3">Sebastian Vanegas</p>
+              <p class="h5 text6 mt-3">Desarrollador Frontend/Backend.</p>
+              <a href="https://github.com/BigJack2" class="btn btn-outline-warning" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 p-5">
+          <div class="card centrar" style="width: 18rem">
+            <img src="./assets/img/equipo/Ricardo.jpg" class="card-img-top" alt="..." width="320" height="auto" />
+            <div class="card-body">
+              <p class="h4 font3 text6 mt-3">Ricardo Rodriguez</p>
+              <p class="h5 text6 mt-3">Ingeniero en desarrollo de Software.</p>
+              <a href="https://github.com/JuanRodriguez95" class="btn btn-outline-warning" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card centrar" style="width: 18rem">
+            <img src="./assets/img/equipo/LuisaR.jpg" class="card-img-top" alt="" width="320" height="auto" />
+            <div class="card-body">
+              <p class="h4 font3 text6 mt-3">Luisa Arboleda</p>
+              <p class="h5 text6 mt-3">Ingeniera de Sistemas.</p>
+              <a href="https://github.com/luffi0804" class="btn btn-outline-warning" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card centrar" style="width: 18rem">
+            <img src="./assets/img/equipo/Valentina.jpg" class="card-img-top" alt="..." width="320" height="auto" />
+            <div class="card-body">
+              <p class="h4 font3 text6 mt-3">Valentina Quiñones</p>
+              <p class="h5 text6 mt-3">Ingeniera de Sistemas.</p>
+              <a href="https://github.com/ValenQ06" class="btn btn-outline-warning" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card centrar" style="width: 18rem">
+            <img src="./assets/img/equipo/Ivan.jpg" class="card-img-top" alt="..." width="320" height="auto" />
+            <div class="card-body">
+              <p class="h4 font3 text6 mt-3">Ivan Grisales</p>
+              <p class="h5 text6 mt-3">Ingeniero de Sistemas.</p>
+              <a href="https://github.com/David10191996" class="btn btn-outline-warning" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="politicas" class="row mb-3">
+        <div class="col-sm-12 p-5">
+          <p class="h2 font3 text-center text6 mt-3">Politicas de Privacidad</p>
+          <br />
+          <p class="h4 font3 text6 mt-3">1. Informacion General</p>
+          <p style="text-align: justify">
+            Como operador de los sitios, nos tomamos muy en serio la protección de sus datos personales. Recopilamos, procesamos y
+            utilizamos sus datos personales de acuerdo con esta política de privacidad y de conformidad con Las Políticas de
+            Tratamiento de Datos Personales en Colombia, Tratamiento de datos Sensibles y la Autorización Especial de Datos
+            Personales Sensibles. Esta política de privacidad ("Política de privacidad") le proporcionará información sobre la
+            recopilación, el procesamiento y el uso de sus datos personales al utilizar nuestro sitio web.
+            <br /><br />
+            En caso de que nos proporcione los datos personales de terceros (como familiares, compañeros de trabajo) debe
+            asegurarse de que estas personas están familiarizadas con esta Política de privacidad y solo debe compartir sus datos
+            personales si tiene permiso para hacerlo y asegurarse de que sus datos personales son correctos.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">2. Tratamiento de los datos relativos a los emplazamientos</p>
+          <br /><br />
+          <p class="h5 font3 text6 mt-3">2.1 Visitar nuestros sitios web</p>
+          <p style="text-align: justify">
+            Cuando visita nuestro sitio web, el proveedor de alojamiento de nuestro sitio web, Amazon Web Services (AWS) recopila
+            y almacena automáticamente varias informaciones en los llamados archivos de registro del servidor que su navegador nos
+            transmite. La información/datos mencionados no están asignados a personas específicas ni vinculados a datos de otras
+            fuentes. Los siguientes datos técnicos serán registrados por nosotros, como es habitual con cada conexión con un
+            servidor web, sin su intervención, y almacenados por nosotros hasta la eliminación automática después de no más de dos
+            días:
+            <br /><br />
+            La recogida y tratamiento de estos datos técnicos tiene como objetivo permitir el uso de nuestro sitio web,
+            garantizando continuamente la seguridad y estabilidad del sistema, optimizando nuestro sitio web y con fines
+            estadísticos internos. Además, se evaluarán las direcciones IP, junto con otros datos, en caso de ataques a la
+            infraestructura de red u otro uso no autorizado o mal uso del sitio web, con fines de inteligencia y protección, y, en
+            su caso, utilizados en procedimientos penales de identificación y procedimientos civiles y penales contra los usuarios
+            pertinentes.
+          </p>
+          <br />
+          <p class="h5 font3 text6 mt-3">2.2 Uso de cookies de sitios web</p>
+          <p style="text-align: justify">
+            El sitio web utiliza cookies. Las cookies son archivos de texto que se almacenan en un sistema informático a través de
+            un navegador de Internet. Muchos sitios de Internet y servidores utilizan cookies. Muchas cookies contienen un ID de
+            cookie. Un ID de cookie es un identificador único de la cookie. Consiste en una cadena de caracteres a través de la
+            cual se pueden asignar páginas y servidores de Internet al navegador de Internet específico en el que se almacenó la
+            cookie. Esto permite a los sitios y servidores de Internet visitados diferenciar el navegador individual del
+            interesado de otros navegadores de Internet que contienen otras cookies. Un navegador de Internet específico puede ser
+            reconocido e identificado utilizando el ID de cookie único.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">3. Transferencia internacional de datos personales</p>
+          <p style="text-align: justify">
+            Tenemos derecho a transferir sus datos personales a terceros en el extranjero para los fines del tratamiento de datos
+            descrito en esta Política de privacidad. Esto concierne especialmente al siguiente receptor(es): nuestros proveedores
+            de servicios web proveedor de comercio electrónico como proveedores de soluciones de pago para ayudarnos en el
+            procesamiento de sus pagos en línea. <br />
+            Están obligados a proteger la privacidad de los datos en la misma medida que nosotros mismos. Si el nivel de
+            protección de datos en un país determinado no corresponde al nivel de protección de datos colombiano, nos aseguramos
+            contractualmente de que la protección de sus datos personales corresponda en todo momento a la de Colombia y Latino
+            América mediante la celebración de acuerdos utilizando las cláusulas contractuales estándar y cumpliendo con el
+            tratamiento de datos personales.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">4. Seguridad de los datos</p>
+          <p style="text-align: justify">
+            Utilizamos las medidas de seguridad técnicas y organizativas adecuadas para proteger sus datos personales almacenados
+            contra la manipulación, la pérdida parcial o completa y el acceso no autorizado de terceros. Nuestras medidas de
+            seguridad se mejoran continuamente en consonancia con los avances técnicos. <br />
+            Tenga en cuenta que cualquier transmisión de datos en Internet (p. ej., comunicación por correo electrónico)
+            generalmente no es segura y no aceptamos ninguna responsabilidad por los datos transmitidos a través de Internet.
+            Lamentablemente, la protección absoluta no es técnicamente posible. Esta información no se aplica a los sitios web de
+            terceros ni a los enlaces correspondientes que aparecen en nuestros sitios web.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">5. Duración del almacenamiento</p>
+          <p style="text-align: justify">
+            Poiocoin procesará y almacenará los datos personales del interesado solo durante el período necesario para lograr la
+            finalidad del almacenamiento, o en la medida en que así lo permitan las leyes o reglamentos aplicables. Si el
+            propósito de almacenamiento no es aplicable, o si un período de almacenamiento prescrito por las leyes aplicables
+            expira, los datos personales se borran rutinariamente de acuerdo con los requisitos legales.
+          </p>
+          <br /><br />
+          <p class="h2 font3 text-center text6 mt-3">Politicas de Cookies</p>
+          <p style="text-align: justify">
+            Nuestros sitios web utilizan cookies para distinguirlo de otros usuarios de nuestros sitios web. Esto nos ayuda a
+            proporcionarle una buena experiencia cuando navega por nuestros sitios web y también nos permite mejorar nuestros
+            sitios. Al continuar navegando por los sitios, usted acepta nuestro uso de cookies y los términos de esta política
+            ("Política de cookies"). Una cookie es un pequeño archivo de letras y números que almacenamos en su navegador o en el
+            disco duro de su ordenador si está de acuerdo. Las cookies contienen información que se transfiere al disco duro de su
+            ordenador. Utilizamos las siguientes cookies:
+          </p>
+          <br />
+          <div class="row">
+            <div class="col-sm-12 col-md-6 p-5">
+              <p style="text-align: justify">
+                <i class="bx bx-chevron-right"></i> Cookies estrictamente necesarias. Son cookies necesarias para el
+                funcionamiento de nuestros sitios web. Incluyen, por ejemplo, cookies que le permiten iniciar sesión en áreas
+                seguras de nuestros sitios web, utilizar un carrito de compras o hacer uso de servicios de procesamiento de pagos
+                de comercio electrónico. <br /><br /><br />
+                <i class="bx bx-chevron-right"></i> Cookies analíticas/de rendimiento. Nos permiten reconocer y contar el número
+                de visitantes y ver cómo los visitantes se mueven por nuestros sitios web cuando lo utilizan. Esto nos ayuda a
+                mejorar la forma en que funcionan nuestros sitios web, por ejemplo, asegurándonos de que los usuarios están
+                encontrando lo que están buscando
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 p-5">
+              <p style="text-align: justify">
+                <i class="bx bx-chevron-right"></i> Cookies de funcionalidad. Estas cookies se utilizan para reconocerle cuando
+                regresa a nuestros sitios web. Nos permiten personalizar nuestro contenido para usted, saludarlo por su nombre y
+                recordar sus preferencias (por ejemplo, su elección de idioma o región). <br /><br /><br />
+                <i class="bx bx-chevron-right"></i> Cookies de segmentación. Estas cookies registran su visita a nuestros sitios
+                web, las páginas que ha visitado y los enlaces que ha seguido.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="terminos" class="row mb-3">
+        <div class="col-sm-12 p-5">
+          <p class="h2 font3 text-center text6 mt-3">Terminos de Uso</p>
+          <br /><br />
+          <p style="text-align: justify">
+            <strong>POR FAVOR LEA ESTOS TÉRMINOS DE USO ANTES DE USAR LOS SITIOS WEB.</strong>
+            <br /><br />
+            Aceptación de los Términos de Uso Estos términos de uso son introducidos por y entre usted y la Fundación Ethereum
+            ("Fundación", "nosotros" o "nosotros"). Los siguientes términos y condiciones, junto con cualquier documento que
+            incorporen expresamente por referencia (colectivamente, estos "Términos de Uso"), rigen su acceso y uso de Poiocoin,
+            incluyendo cualquier contenido, funcionalidad y servicios ofrecidos en o a través de nuestra página oficial. <br />
+            Por favor, lea atentamente las Condiciones de Uso antes de comenzar a utilizar los Sitios Web. Al utilizar los Sitios
+            Web o haciendo clic para aceptar o aceptar los Términos de Uso cuando esta opción se pone a su disposición, usted
+            acepta y acepta estar obligado y acatar estos Términos de Uso además de nuestra Política de Privacidad, incorporada
+            por referencia; y nuestra Política de Cookies, incorporada aquí por referencia. Si no acepta estos Términos de Uso o
+            la Política de Privacidad, no debe acceder ni utilizar los Sitios web.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">1. Quién Puede Usar el Sitio Web</p>
+          <p style="text-align: justify">
+            Este sitio web se ofrece y está disponible para usuarios mayores de 13 años. El sitio web no está dirigido a niños
+            menores de 13 años. Al usar este Sitio Web, usted declara y garantiza que usted (i) tiene 13 años o más, (ii) no tiene
+            prohibido el uso del Sitio Web bajo ninguna ley aplicable, y (iii) está utilizando el Sitio Web sólo para su propio
+            uso personal. Si no cumple estos requisitos, no debe acceder ni utilizar el sitio web.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">2. Cambios en los Términos de Uso</p>
+          <p style="text-align: justify">
+            Podemos revisar y actualizar estos Términos de Uso de vez en cuando a nuestra entera discreción. Todos los cambios son
+            efectivos inmediatamente cuando los publicamos. <br />
+
+            El uso continuado del Sitio Web tras la publicación de los Términos de Uso revisados significa que usted acepta y
+            acepta los cambios. Se espera que revise esta página con frecuencia para que esté al tanto de cualquier cambio, ya que
+            son vinculantes para usted.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">3. Acceso a los sitios web y seguridad de la cuenta</p>
+          <p style="text-align: justify">
+            Nos reservamos el derecho de retirar o modificar este Sitio Web, y cualquier servicio o material que proporcionemos en
+            el Sitio Web, a nuestra entera discreción y sin previo aviso. No garantizamos que nuestro sitio o cualquier contenido
+            en él, siempre estará disponible o será interrumpido. No nos haremos responsables si, por cualquier razón, la
+            totalidad o parte de los Sitios Web no está disponible en cualquier momento o durante cualquier período. De vez en
+            cuando, podemos restringir el acceso a algunas partes del Sitio Web, o a todo el Sitio Web, a los usuarios.
+          </p>
+          <br />
+          <p class="h5 font3 text6 mt-3">Usted es responsable de:</p>
+          <p style="text-align: justify">
+            Hacer todos los arreglos necesarios para que usted tenga acceso a los sitios web. Asegurarse de que todas las personas
+            que acceden a los Sitios Web a través de su conexión a Internet están al tanto de estos Términos de Uso y los cumplen.
+            Para acceder a el Sitio Web o a algunos de los recursos que ofrece, se le puede pedir que proporcione ciertos detalles
+            de registro u otra información. Es una condición de su uso del Sitio Web que toda la información que proporcione en el
+            Sitio Web sea correcta, actual y completa. Usted acepta que toda la información que proporcione para registrarse
+            utilizando este Sitio Web o de otro modo, incluyendo, pero no limitándose a, el uso de cualquier característica
+            interactiva en el Sitio Web, se rige por nuestra Política de Privacidad, y usted consiente todas las acciones que
+            tomamos con respecto a su información de acuerdo con nuestra Política de Privacidad. <br />
+            Debe tener especial precaución al introducir información personal en el sitio web en un ordenador público o compartido
+            para que otros no puedan ver o registrar su información personal.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">4. Derechos de propiedad intelectual</p>
+          <p style="text-align: justify">
+            El Sitio Web y todo su contenido, características y funcionalidad (incluyendo pero no limitado a toda la información,
+            software, texto, pantallas, imágenes, vídeo y audio, y el diseño, selección y disposición de los mismos), son
+            propiedad de la Fundación, sus licenciantes u otros proveedores de dicho material y están protegidos por derechos de
+            autor, marcas comerciales, patentes, secretos comerciales y otras leyes de propiedad intelectual o derechos de
+            propiedad. A menos que se indique lo contrario: (a) todo el material, datos e información de los Sitios Web, tales
+            como archivos de datos, texto, música, archivos de audio u otros sonidos, fotografías, videos u otras imágenes, pero
+            excluyendo cualquier software o código informático (colectivamente, el "Contenido no codificado") está licenciado bajo
+            la Licencia Internacional Creative Commons Atribución 4.0; y (b) todo el software o código informático
+            (colectivamente, el "Contenido de Código") está licenciado bajo la Licencia MIT.
+          </p>
+          <br /><br />
+          <p class="h4 font3 text6 mt-3">5. Usos prohibidos</p>
+          <p style="text-align: justify">
+            Usted puede utilizar el Sitio Web sólo para fines legales y de acuerdo con estos Términos de Uso. Usted acepta no
+            utilizar el Sitio Web:
+          </p>
+          <p style="text-align: justify">
+            De cualquier manera que viole cualquier ley o regulación federal, estatal, local o internacional aplicable
+            (incluyendo, sin limitación, cualquier ley con respecto a la exportación de datos o software hacia y desde los Estados
+            Unidos u otros países).
+          </p>
+          <ol style="text-align: justify">
+            <li>
+              Con el fin de explotar, dañar o intentar explotar o dañar a los menores de cualquier manera, exponiéndolos a
+              contenidos inapropiados, pidiendo información de identificación personal o de otra manera.
+            </li>
+            <br />
+            <li>
+              Enviar, recibir, cargar, descargar, utilizar o reutilizar a sabiendas cualquier material que no cumpla con estos
+              Términos de Uso.
+            </li>
+            <br />
+            <li>
+              Transmitir o procurar el envío de cualquier material publicitario o promocional sin nuestro consentimiento previo
+              por escrito, incluyendo cualquier "correo basura", "carta en cadena" o "spam" o cualquier otra solicitud similar.
+            </li>
+            <br />
+            <li>
+              Suplantar o intentar suplantar a la Fundación, a un empleado de la Fundación, a otro usuario o a cualquier otra
+              persona o entidad (incluyendo, sin limitación, el uso de direcciones de correo electrónico o nombres de usuario
+              asociados con cualquiera de los anteriores).
+            </li>
+            <br />
+            <li>
+              Participar en cualquier otra conducta que restrinja o inhiba el uso o disfrute del Sitio Web por parte de cualquier
+              persona, o que, según lo determinado por nosotros, pueda perjudicar a la Fundación o a los usuarios de los Sitios
+              Web o exponerlos a responsabilidad.
+            </li>
+          </ol>
+          <br /><br />
+          <p class="h5 font3 text6 mt-3">Además, usted acepta no:</p>
+          <ol style="text-align: justify">
+            <li>
+              Utilizar los Sitios Web de cualquier manera que pudiera deshabilitar, sobrecargar, dañar o perjudicar el sitio o
+              interferir con el uso del Sitio Web por cualquier otra parte, incluyendo su capacidad para participar en actividades
+              en tiempo real a través del Sitio Web.
+            </li>
+            <br />
+            <li>
+              Utilizar los Sitios Web de cualquier manera que pudiera deshabilitar, sobrecargar, dañar o perjudicar el sitio o
+              interferir con el uso del Sitio Web por cualquier otra parte, incluyendo su capacidad para participar en actividades
+              en tiempo real a través del Sitio Web.
+            </li>
+            <br />
+            <li>
+              Utilizar cualquier robot, araña u otro dispositivo, proceso o medio automático para acceder a el Sitio Web con
+              cualquier propósito, incluyendo el monitoreo o copia de cualquier material en el Sitio Web.
+            </li>
+            <br />
+            <li>
+              Utilizar cualquier proceso manual para controlar o copiar cualquier material en los Sitios Web o para cualquier otro
+              propósito no autorizado sin nuestro consentimiento previo por escrito.
+            </li>
+            <br />
+            <li>
+              Utilizar cualquier dispositivo, software o rutina que interfiera con el correcto funcionamiento del Sitio Web.
+            </li>
+            <br />
+            <li>Introducir virus, troyanos, gusanos, bombas lógicas u otro material malicioso o tecnológicamente nocivo.</li>
+            <br />
+            <li>
+              Intentar obtener acceso no autorizado, interferir, dañar o interrumpir cualquier parte del Sitio Web, el servidor en
+              el que se almacenan los Sitios Web, o cualquier servidor, ordenador o base de datos conectados a el Sitio Web.
+            </li>
+            <br />
+            <li>
+              Ataque a el sitio web mediante un ataque de denegación de servicio o un ataque de denegación de servicio
+              distribuido.
+            </li>
+            <li>Otro intento de interferir con el correcto funcionamiento del Sitios Web.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-6 p-5"></div>
+        <div class="col-sm-12 col-md-6 p-5"></div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid bg6 text-white">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5"><img class="centrar" src="./assets/img/logo-fondo.png" width="70%" /></div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3">Nuestros productos:</p>
+          <br />
+          <a class="btn-9" href="productos.html#planes"><i class="bx bx-chevron-right"></i> Planes de ahorro </a><br /><br />
+          <a class="btn-9" href="productos.html#tarjetas"><i class="bx bx-chevron-right"></i> Tarjetas</a><br /><br />
+          <a class="btn-9" href="productos.html#licencias"><i class="bx bx-chevron-right"></i> Licencias</a><br /><br />
+          <a class="btn-9" href="productos.html#depositar"><i class="bx bx-chevron-right"></i> Como depositar</a><br /><br />
+          <a class="btn-9" href="productos.html#presencia"><i class="bx bx-chevron-right"></i> Presencia Internacional</a
+          ><br /><br />
+          <a class="btn-9" href="productos.html#acciones"><i class="bx bx-chevron-right"></i> Adquiere Acciones</a><br /><br />
+          <a class="btn-9" href="productos.html#divisas"><i class="bx bx-chevron-right"></i> Cambio de Divisas</a><br /><br />
+          <a class="btn-9" href="productos.html#empresas"><i class="bx bx-chevron-right"></i> PoioCoin para empresas </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3">Contactanos:</p>
+          <br />
+          <a class="btn-9" href="nosotros.html#contacto"
+            ><i style="font-size: 22px" class="bx bxl-gmail"></i> - poiocoin0@gmail.com </a
+          ><br /><br />
+          <a class="btn-9" href="#"><i style="font-size: 28px" class="bx bxl-whatsapp"></i> +57 257 545 415</a><br /><br />
+          <p class="text-white"><i class="bx bx-chevron-right"></i> Nuestras redes:</p>
+          <br />
+          <div class="social-links2">
+            <a href="https://twitter.com/poiocoin" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/poiocoin0" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          </div>
+          <br />
+          <p class="h4 font3">Código QR:</p>
+          <br />
+          <img src="./assets/img/qr-code.svg" width="160px" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3 text-center">Nuestra App:</p>
+          <br />
+          <center>
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-primary text-white">Windows 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-primary text-white">Windows 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-8 text-white">Linux 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-8 text-white">Linux 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-7 text-white">Mac OS <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-7 text-white">Mac iOS <i class="bx bxs-download"></i></a>
+            </div>
+            <br /><br /><br /><br />
+
+            <img class="centrar" src="./assets/img/btn1.png" width="50%" />
+          </center>
+        </div>
+        <div class="col-sm-12 p-2 text-center">
+          <p>
+            &copy; Copyright <strong><span>PoioCoin</span></strong
+            >. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

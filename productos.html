@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoioCoin</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&family=Open+Sans&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <link href="./assets/css/style-light.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header class="row">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white">
+          <div class="container">
+            <a href="./index.html"><img src="./assets/img/logo-fondo.png" width="110" height="110" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a id="menu-home" class="nav-link active text-link-6" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="menu-products"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="menu-products">
+                    <li>
+                      <a id="menu-savigs-plan" class="dropdown-item text-link-6" href="productos.html#planes"
+                        >Planes de ahorro
+                      </a>
+                    </li>
+                    <li>
+                      <a id="menu-cards" class="dropdown-item text-link-6" href="productos.html#tarjetas">Tarjetas</a>
+                    </li>
+                    <li>
+                      <a id="menu-licenses" class="dropdown-item text-link-6" href="productos.html#licencias">Licencias</a>
+                    </li>
+                    <li>
+                      <a id="menu-deposit" class="dropdown-item text-link-6" href="productos.html#depositar">Como depositar</a>
+                    </li>
+                    <li>
+                      <a id="menu-presence" class="dropdown-item text-link-6" href="productos.html#presencia"
+                        >Presencia Internacional
+                      </a>
+                    </li>
+                    <li>
+                      <a id="menu-stocks" class="dropdown-item text-link-6" href="productos.html#acciones">Adquiere Acciones</a>
+                    </li>
+                    <li>
+                      <a id="menu-exchange" class="dropdown-item text-link-6" href="productos.html#divisas">Cambio de Divisas</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="productos.html#empresas">PoioCoin para empresas </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a id="menu-shop" class="nav-link text-link-6" href="./Compras.html">Compras</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="menu-about"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
+                    <li>
+                      <a id="menu-about-us" class="dropdown-item text-link-6" href="nosotros.html#quienes">¿Quienes somos?</a>
+                    </li>
+
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a id="menu-about-politicies" class="dropdown-item text-link-6" href="nosotros.html#politicas"
+                        >Políticas de privacidad <i class="bx bxs-lock-open-alt"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-about-terms" class="dropdown-item text-link-6" href="nosotros.html#terminos"
+                        >Términos de uso <i class="bx bxs-pen"></i
+                      ></a>
+                    </li>
+
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a id="menu-about-contact" class="dropdown-item text-link-6" href="nosotros.html#contacto"
+                        >Contacto <i class="bx bxs-phone-call"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-about-suport" class="dropdown-item text-link-6" href="nosotros.html#soporte"
+                        >Soporte <i class="bx bx-wrench"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-about-team" class="dropdown-item text-link-6" href="nosotros.html#equipo"
+                        >Nuestro equipo de trabajo</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a id="menu-about-news" class="dropdown-item text-link-6" href="noticias.html"
+                        >Noticias <i class="bx bxs-book-content"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-about-testimonials" class="dropdown-item text-link-6" href="noticias.html#testimonio"
+                        >Testimonios <i class="bx bxs-user-voice"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="menu-user"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Usuario
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="menu-user">
+                    <li>
+                      <a id="menu-user-singin" class="dropdown-item text-link-6" href="ingresar.html"
+                        >Ingresar <i class="bx bxs-key"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-user-singup" class="dropdown-item text-link-6" href="registro.html"
+                        >Registrarme <i class="bx bxs-pen"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a id="menu-user-training" class="dropdown-item text-link-6" href="capacitacion.html"
+                        >Capacitacion <i class="bx bx-glasses-alt"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="btn ms-2 btn-6 py-0 px-1 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="menu-theme"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Modo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="menu-theme">
+                    <li>
+                      <a id="themeDark" class="dropdown-item" href="#">Oscuro <i class="bx bxs-moon"></i></a>
+                    </li>
+                    <li>
+                      <a id="themeLight" class="dropdown-item" href="#">Iluminado <i class="bx bxs-sun"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control ms-3 me-1 text6" type="search" placeholder="Search" />
+                <button id="btn-buscar" class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+              <div class="social-links mt-sm-3 mt-lg-0">
+                <a id="btn-languaje" href="#" class="twitter"
+                  ><img style="margin-top: -11.6px" width="35" src="./assets/img/espain.png" alt=""
+                /></a>
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="row mt-5 pt-5 mb-5">
+        <div class="col-8 mt-5 pt-5 centrar" id="planes">
+          <h3 id="title-section-savings" class="h2 font3 text-center text6 mt-3">Planes de ahorro</h3>
+          <br />
+          <p id="section-savings" class="text-align: justify">
+            Ahora es aún más fácil crear tu cartera personal de activos digitales. Invertir automáticamente sin el estrés de tener
+            que cronometrar el mercado, todo ello gracias a <strong>PoioCoin Savings</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-4 d-flex align-items-center">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-buy" class="h2 font3 text-center text6 mt-3">
+            Compra cómodamente Poiocoins y otros valores a lo largo del tiempo
+          </p>
+          <br />
+          <p id="section-buy" style="text-align: justify">
+            Una vez que se ha creado un plan de ahorro, se compra automáticamente a la hora establecida. No tienes que preocuparte
+            por nada más y puedes comprar Poiocoin, Ethereum, oro y otros valores durante un período de tiempo más largo.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_personal_finance_tqcd.svg" width="60%" />
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-savings2" class="h2 font3 text-center text6 mt-3">
+            Establece fácilmente varios planes de ahorro:
+          </p>
+          <br />
+          <p id="section-savings2" style="text-align: justify">
+            Puedes configurar tantos planes de ahorro como desees y para cualquier activo digital admitido en Poiocoin. Incluso
+            puedes establecer diversos planes de ahorro para el mismo activo.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_vault_re_s4my.svg" width="60%" />
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_finance_re_gnv2.svg" width="60%" />
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-effect" class="h2 font3 text-center text6 mt-3">
+            Aprovecha el efecto del promedio de los costes
+          </p>
+          <br />
+          <p id="section-effect" style="text-align: justify">
+            La adquisición constante de un activo es una buena estrategia para suavizar la volatilidad del mercado. Comprar
+            Poiocoin y otros activos digitales de forma semanal, quincenal o mensual te hace menos dependiente de las
+            fluctuaciones de precios a corto plazo.
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-flexi" class="h2 font3 text-center text6 mt-3">Máxima flexibilidad</p>
+          <br />
+          <p id="section-flexi" style="text-align: justify">
+            No solo te damos la máxima flexibilidad y libertad al establecer tu plan de ahorros, sino también para más adelante.
+            Puedes hacer una pausa temporal y luego reanudar tus planes de ahorro cuando quieras.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-credit" class="h2 font3 text-center text6 mt-3">
+            Paga con tarjeta de crédito o débito directo SEPA
+          </p>
+          <br />
+          <p id="section-credit" style="text-align: justify">
+            Puedes establecer un plan de ahorro personal utilizando Visa, MasterCard o débito directo SEPA. No tienes que pensar
+            en ello tras tu primera compra, ya que las compras recurrentes posteriores se ejecutarán automáticamente.
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-savings3" class="h2 font3 text-center text6 mt-3">Cómo establecer un plan de ahorro</p>
+          <br />
+          <p id="section-savings3" style="text-align: justify">
+            Establecer un plan de ahorro es fácil. Incluso puedes crear más de uno y cambiar los detalles de cada uno de ellos
+            cuando quieras. Inicia sesión en tu cuenta, verifica si aún no lo has hecho y sigue los pasos que estan a la derecha.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/pasos.png" width="75%" />
+        </div>
+      </div>
+
+      <div id="tarjetas" class="row d-flex mb-5 align-items-center">
+        <h3 id="title-section-cards2" class="h2 font3 text-center text6 mt-3">Tarjetas</h3>
+        <br /><br />
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_wallet_aym5.svg" width="70%" />
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-cash" class="h2 font3 text-center text6 mt-3">
+            Usa tus inversiones como si fueran dinero en efectivo
+          </p>
+          <br />
+          <p id="section-cash" style="text-align: justify">
+            Una tarjeta de débito distinta de todas las demás. Gasta tus criptomonedas, metales y acciones con solo sacar tu
+            tarjeta estés donde estés.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-buy2" class="h2 font3 text-center text6 mt-3">Compra lo que quieras. Donde quieras</p>
+          <br />
+          <p id="section-buy2" style="text-align: justify">
+            Paga con criptomonedas, metales o cualquier otro activo. Solo tendrás que usar tu tarjeta allí donde veas un logo de
+            Visa.
+            <br /><br />
+          </p>
+          <ul id="section-buy2-ul">
+            <li>Utiliza la Poiocoin App para cambiar los activos de pago.</li>
+            <li>Aceptada por más de 54 millones de comerciantes adscritos a Visa en más de 200 países.</li>
+            <li>Tarjeta sin comisiones y cuenta sin comisiones mensuales.</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_online_shopping_re_k1sv.svg" width="80%" />
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_pay_online_b-1-hk.svg" width="80%" />
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-recover" class="h2 font3 text-center text6 mt-3">Recupera criptomonedas</p>
+          <br />
+          <p id="section-recover" style="text-align: justify">
+            Los usuarios VIP BEST pueden ampliar su gasto y ganar Poiocoin con cada compra que realicen.
+          </p>
+          <br />
+          <ul id="section-recover-ul">
+            <li>Gana entre el 0,5 % y el 2 % por transacción.</li>
+            <li>Consigue entre un 0,75 % y un 2,25 % de descuento en las comisiones de cambio.</li>
+            <li>Retiradas gratuitas de cajeros automáticos cada mes.</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-safe2" class="h2 font3 text-center text6 mt-3">Fiable y segura</p>
+          <br />
+          <p id="subtitle-section-safe3" style="text-align: justify">
+            Poiocoin y Visa velan por la seguridad de todas tus transacciones, tanto en compras online como en tienda física.
+          </p>
+          <br />
+          <ul id="subtitle-section-safe4">
+            <li>Respaldada por la seguridad y la prevención del fraude de Visa.</li>
+            <li>Bloquea y desbloquea tu tarjeta con un toque.</li>
+            <li>Protección extra 3DS con una capa de seguridad adicional.</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_security_re_a2rk.svg" width="80%" />
+        </div>
+      </div>
+
+      <div class="row mb-5" id="licencias">
+        <p id="title-section-licenses" class="h2 font3 text-center text6 mt-3">Licencias</p>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="subtitle-section-regulated" class="h4 font3 text-center text4">
+            Oficialmente Regulado <i class="bx bxs-shield-alt-2"></i>
+          </p>
+          <br />
+          <p id="section-regulated" style="text-align: justify">
+            Certificado, monitorizado y regulado por la entidad pública FIN-FSA.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="subtitle-section-sell" class="h4 font3 text-center text4">
+            Compra-venta en tiempo real <i class="bx bxs-dollar-circle"></i>
+          </p>
+          <br />
+          <p id="section-sell" style="text-align: justify">
+            Realiza operaciones instantáneamente en los principales mercados de criptomonedas.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="subtitle-section-licensepay" class="h4 font3 text-center text4">
+            Licencia de entidad de pago <i class="bx bxs-coin"></i>
+          </p>
+
+          <p id="section-licensepay" style="text-align: justify">
+            En 2019 nos registramos oficialmente como un proveedor de servicios de criptomonedas por Autoridad Financiera de
+            Finlandia (FIN-FSA).
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-5 d-flex align-items-center" id="depositar">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-deposit" class="h2 font3 text-center text6 mt-3">¿Cómo depositar Poiocoins?</p>
+          <br />
+          <p id="section-deposit" style="text-align: justify">
+            Para obtener <strong>Poiocoins</strong>, debe registrarse en el intercambio y comprarlas a otros usuarios o utilizar
+            el intercambio de Poiocoin. Puede usar transferencias rápidas o pagos BLIK para comprar Poiocoin; gracias a ellos, por
+            una cantidad específica, recibirá una cantidad específica de Poiocoin u otra criptomoneda.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_crypto_portfolio_2jy5.svg" width="80%" />
+        </div>
+      </div>
+
+      <div class="row mb-5 d-flex align-items-center" id="depositar">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="subtitle-section-withdraw" class="h2 font3 text-center text6 mt-3">¿Cómo retirar Poiocoins?</p>
+          <br />
+          <p id="section-withdraw" style="text-align: justify">
+            Existen dos formas de realizarlo, uno de ellos es una <strong>venta de Poiocoin</strong> en un intercambio por el que
+            el comprador está dispuesto a pagar una determinada cantidad. Luego, los fondos almacenados en el intercambio o en la
+            billetera se pueden transferir a la cuenta solicitando una transferencia en el sistema de intercambio. Otra opción son
+            <strong>retiros en un cajero automático</strong> mediante pagos BLIK. Para muchos, es la forma más simple y rápida de
+            retiro de Poiocoin, que no requiere proporcionar datos personales al usar pagos BLIK. Es suficiente tener un teléfono
+            móvil o una aplicación especial de bolsa.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_transfer_money_rywa.svg" width="80%" />
+        </div>
+      </div>
+
+      <div class="row mb-5 d-flex align-items-center" id="presencia">
+        <h3 id="title-section-presence" class="h2 font3 text-center text6">Presencia Internacional</h3>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-presence2" class="h2 font3 text-center text6">Comunidad Poiocoin</p>
+          <br />
+          <p id="title-section-presence3" style="text-align: justify">
+            Hay muchas maneras de involucrarse en la comunidad PoioCoin de rápido crecimiento; puede unirse a una de las
+            comunidades en línea populares, asistir a un evento, unirse a un grupo de reunión, contribuir a un proyecto o
+            participar en uno de los muchos foros en línea sobre PoioCoin.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-presence4" class="h2 font3 text-center text6">Red abierta</p>
+          <br />
+          <p id="title-section-presence5" style="text-align: justify">
+            En Poiocoin no se necesitas permisos; te permite interactuar con otros seres humanos sin intrusiones de terceros. Es
+            un dinero descentralizado, voluntario y no agresivo. A medida que aumente el uso, las viejas estructuras de poder se
+            debilitarán y florecerán nuevas ideas. Poiocoin puede ayudar a iniciar la mayor revolución pacífica que el mundo haya
+            conocido.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-5 d-flex align-items-center" id="acciones">
+        <h3 id="title-section-shares" class="h2 font3 text-center text6 mt-3">Acciones</h3>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_revenue_re_2bmg.svg" width="50%" />
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-shares2" class="h2 font3 text-center text6 mt-3">Wall Street, sin barreras</p>
+          <br />
+          <p id="title-section-shares3" style="text-align: justify">
+            Olvídate del precio de las acciones. Hazte con fracciones de tus empresas favoritas desde tan solo 1 euro, con cero
+            comisiones y spreads ajustados. Poiocoin Stocks son contratos que replican acciones o ETF subyacentes.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-shares4" class="h2 font3 text-center text6 mt-3">Invierte en fracciones o en la acción completa</p>
+          <br />
+          <p id="title-section-shares5" style="text-align: justify">
+            Crea tu propia cartera invirtiendo en acciones completas de tus empresas favoritas o en fracciones de las mismas y
+            desde tan solo un euro.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-shares6" class="h2 font3 text-center text6 mt-3">Plenamente respaldados por activos físicos</p>
+          <br />
+          <p id="title-section-shares7" style="text-align: justify">
+            Tus inversiones están físicamente respaldadas y almacenadas en un banco depositario. De este modo nos aseguramos de
+            mantenerlas siempre seguras y reducir el riesgo de contraparte.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-shares8" class="h2 font3 text-center text6 mt-3">Trading sin comisiones y con spreads ajustados</p>
+          <br />
+          <ul id="title-section-shares8-ul">
+            <li>Sin comisiones de cuenta</li>
+            <li>Sin comisiones de gestión</li>
+            <li>Sin comisiones de apertura</li>
+            <li>Sin comisiones de cambio de divisas</li>
+            <li>Sin comisiones por distribuciones o retiradas</li>
+            <li>Operaciones de trading sin comisiones, siempre.</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_online_payments_re_y8f2.svg" width="60%" />
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <img class="centrar" src="./assets/img/undraw_data_re_80ws.svg" width="60%" />
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-shares9" class="h2 font3 text-center text6 mt-3">¿Cómo funciona?</p>
+          <br />
+          <ol id="title-section-shares9-ol">
+            <li>Poiocoin compra las acciones subyacentes en bolsas asociadas.</li>
+            <li>Nuestros socios del banco depositario se encargan de que nuestras acciones estén seguras.</li>
+            <li>Tú inviertes en fracciones de las acciones a través de derivados.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row mb-5" id="divisas">
+        <h3 id="title-section-exchange" class="h2 font3 text-center text6 mt-3">Cambio de divisas</h3>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-exchange2" class="h2 font3 text-center text6 mt-3">Intercambio instantáneo de activos digitales</p>
+          <br />
+          <p id="section-exchange2" style="text-align: justify">
+            Poiocoin Swap te permite cambiar instantáneamente un activo digital por otro. Simple, seguro y sin límites. Servicio
+            de monedero incluido.
+            <br /><br />
+          </p>
+          <ul id="section-exchange2-ul">
+            <li>Cambio instantáneo de un activo digital a otro.</li>
+            <li>Sin límites en el tamaño de la transacción de intercambio.</li>
+            <li>Servicio de monedero sin preocupaciones para todas las monedas incluidas.</li>
+            <li>o Simple y rápida interfaz de usuario.</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p id="title-section-exchange3" class="h2 font3 text-center text6 mt-3">¿Cómo funciona Poiocoin Swap?</p>
+          <br />
+          <br />
+          <p id="section-exchange3" style="text-align: justify">
+            Digamos que tienes Bitcoin (BTC) en tu monedero de Poiocoin y quieres intercambiarlo por IOTA (MIOTA).
+            <br /><br />
+          </p>
+          <ul id="section-exchange3-ul">
+            <li>Selecciona un monedero y haz clic en "Intercambio".</li>
+            <li>Selecciona el monedero Poiocoin en "De" y el monedero IOTA en "A".</li>
+            <li>Define la cantidad que quieres convertir y haz clic en "Intercambiar ahora" y ya está todo listo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mb-5" id="empresas">
+        <p id="title-section-poiocompanies" class="h2 font3 text-center text6 mt-3">Poiocoins para empresas</p>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies2" class="h4 font3 text-center text7">
+            Las tarifas más bajas <i class="bx bx-downvote"></i>
+          </p>
+          <br />
+          <p id="section-poiocompanies2" style="text-align: justify">
+            La altísima seguridad criptográfica ofrecida por Poiocoin permite procesar transacciones de una manera muy eficaz y
+            barata. El usuario puede enviar y recibir pagos utilizando la red Poiocoin prácticamente sin comisiones.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies3" class="h4 font3 text-center text7">
+            Protección contra el fraude <i class="bx bxs-lock"></i>
+          </p>
+          <p id="section-poiocompanies3" style="text-align: justify">
+            Todo negocio que acepta tarjetas de crédito o PayPal conoce el problema con los pagos que son anulados posteriormente.
+            Los pagos con Poiocoins son irreversibles y seguros, lo que significa que el coste que conlleva el fraude deja de
+            recaer en los comerciantes.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies4" class="h4 font3 text-center text7">
+            Pagos rápidos internacionales <i class="bx bxs-timer"></i>
+          </p>
+          <br />
+          <p id="section-poiocompanies4" style="text-align: justify">
+            Los Poiocoins pueden ser transferidos de África a Canadá en 10 minutos. De hecho, los Poiocoins no tienen ninguna
+            ubicación física real, así que puedes transferir tantos como quieras a cualquier lugar sin límites, demoras o costos
+            excesivos.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies5" class="h4 font3 text-center text7">
+            Obtenga un poco de visibilidad gratis <i class="bx bxs-check-circle"></i>
+          </p>
+          <br />
+          <p id="section-poiocompanies5" style="text-align: justify">
+            Poiocoin es un mercado emergente con nuevos clientes que están buscando maneras de gastar sus Poiocoins. Aceptar pagos
+            con bitcoins es una buena forma de conseguir nuevos clientes y de dar a su negocio un poco de visibilidad.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies6" class="h4 font3 text-center text7">
+            Transparencia contable <i class="bx bxs-credit-card"></i>
+          </p>
+          <br />
+          <p id="section-poiocompanies6" style="text-align: justify">
+            Muchas organizaciones están obligadas a presentar los documentos de contabilidad sobre sus actividades. Usar Poiocoin
+            ofrece el más alto nivel de transparencia ya que puede proveer toda la información necesaria para que sus miembros
+            verifiquen sus sueldos y transacciones.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4 p-5">
+          <p id="title-section-poiocompanies7" class="h4 font3 text-center text7">Multi-firma <i class="bx bxs-grid"></i></p>
+          <br />
+          <p id="section-poiocompanies7" style="text-align: justify">
+            Poiocoin también incluye una característica que no es aún muy conocida, que permite que los Poiocoins puedan ser
+            utilizados sólo si un subconjunto de un grupo de personas firma la transacción (llamadas transacciones "m de n").
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid bg6 text-white">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5"><img class="centrar" src="./assets/img/logo-fondo.png" width="70%" /></div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p id="footer-title-products" class="h4 font3">Nuestros productos:</p>
+          <br />
+          <a id="footer-product-1" class="btn-9" href="productos.html#planes"
+            ><i class="bx bx-chevron-right"></i> Planes de ahorro </a
+          ><br /><br />
+
+          <a id="footer-product-2" class="btn-9" href="productos.html#tarjetas"><i class="bx bx-chevron-right"></i> Tarjetas</a
+          ><br /><br />
+
+          <a id="footer-product-3" class="btn-9" href="productos.html#licencias"><i class="bx bx-chevron-right"></i> Licencias</a
+          ><br /><br />
+
+          <a id="footer-product-4" class="btn-9" href="productos.html#depositar"
+            ><i class="bx bx-chevron-right"></i> Como depositar</a
+          ><br /><br />
+
+          <a id="footer-product-5" class="btn-9" href="productos.html#presencia"
+            ><i class="bx bx-chevron-right"></i> Presencia Internacional</a
+          ><br /><br />
+
+          <a id="footer-product-6" class="btn-9" href="productos.html#acciones"
+            ><i class="bx bx-chevron-right"></i> Adquiere Acciones</a
+          ><br /><br />
+
+          <a id="footer-product-7" class="btn-9" href="productos.html#divisas"
+            ><i class="bx bx-chevron-right"></i> Cambio de Divisas</a
+          ><br /><br />
+          <a id="footer-product-8" class="btn-9" href="productos.html#empresas"
+            ><i class="bx bx-chevron-right"></i> PoioCoin para empresas
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p id="footer-title-contact" class="h4 font3">Contactanos:</p>
+          <br />
+          <a class="btn-9" href="nosotros.html#contacto"
+            ><i style="font-size: 22px" class="bx bxl-gmail"></i> - poiocoin0@gmail.com </a
+          ><br /><br />
+          <a class="btn-9" href="#"><i style="font-size: 28px" class="bx bxl-whatsapp"></i> +57 257 545 415</a><br /><br />
+          <p id="footer-title-social" class="text-white"><i class="bx bx-chevron-right"></i> Nuestras redes:</p>
+          <br />
+          <div class="social-links2">
+            <a href="https://twitter.com/poiocoin" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/poiocoin0" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          </div>
+          <br />
+          <p id="footer-title-qr" class="h4 font3">Código QR:</p>
+          <br />
+          <img src="./assets/img/qr-code.svg" width="160px" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p id="footer-title-app" class="h4 font3 text-center">Nuestra App:</p>
+          <br />
+          <center>
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-primary text-white">Windows 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-primary text-white">Windows 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-8 text-white">Linux 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-8 text-white">Linux 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-7 text-white">Mac OS <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-7 text-white">Mac iOS <i class="bx bxs-download"></i></a>
+            </div>
+            <br /><br /><br /><br />
+
+            <img class="centrar" src="./assets/img/btn1.png" width="50%" />
+          </center>
+        </div>
+        <div class="col-sm-12 p-2 text-center">
+          <p>
+            &copy; Copyright <strong><span>PoioCoin</span></strong
+            >. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/translate.js" type="module"></script>
+  </body>
+</html>

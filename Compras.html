@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoioCoin</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&family=Open+Sans&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <link href="./assets/css/style-light.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Header-->
+      <header class="row">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white">
+          <div class="container">
+            <a href="./index.html"><img src="./assets/img/logo-fondo.png" width="110" height="110" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-link-6" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#planes">Planes de ahorro</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#tarjetas">Tarjetas</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#licencias">Licencias</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#depositar">Como depositar</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#presencia">Presencia Internacional </a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#acciones">Adquiere Acciones</a></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#divisas">Cambio de Divisas</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item text-link-6" href="./productos.html#empresas">PoioCoin para empresas</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link-6" href="./compras.html">Compras</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="nosotrosDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
+                    <li><a class="dropdown-item text-link-6" href="./nosotros.html#quienes">¿Quienes somos?</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./nosotros.html#politicas"
+                        >Políticas de privacidad <i class="bx bxs-lock-open-alt"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./nosotros.html#terminos"
+                        >Términos de uso <i class="bx bxs-pen"></i
+                      ></a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="nosotros.html#contacto"
+                        >Contacto <i class="bx bxs-phone-call"></i
+                      ></a>
+                    </li>
+                    <li><a class="dropdown-item text-link-6" href="nosotros.html#equipo">Nuestro equipo de trabajo</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="noticias.html">Noticias <i class="bx bxs-book-content"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="noticias.html#testimonio"
+                        >Testimonios <i class="bx bxs-user-voice"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-link-6"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Usuario
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./ingresar.html">Ingresar <i class="bx bxs-key"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./registro.html">Registrarme <i class="bx bxs-pen"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-link-6" href="./capacitacion.html"
+                        >Capacitacion <i class="bx bx-glasses-alt"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="btn ms-2 btn-6 py-0 px-1 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="modoDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Modo
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="modoDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Dark <i class="bx bxs-moon"></i></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Light <i class="bx bxs-sun"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control ms-3 me-1 text6" type="search" placeholder="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <div class="social-links mt-sm-3 mt-lg-0">
+                <a href="#" class="twitter"
+                  ><img style="margin-top: -11.6px" width="35" src="./assets/img/espain.png" alt=""
+                /></a>
+                <a href="https://twitter.com/poiocoin" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/poiocoin0" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div style="margin-top: 120px" class="row p-5">
+        <p class="h2 font3 text-center text6 mt-3">Compras</p>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <p class="h5 font3 text6 mt-3">Paquete principiante</p>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$100 <small class="text-muted">/10 poiocoin</small></h1>
+              <p style="text-align: left">
+                Inicia tus inversiones en Criptomonedas con
+                <strong>PoioCoin</strong>
+              </p>
+              <button type="button" class="btn btn-lg btn-primary centrar">Comprar este Paquete!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <p class="h5 font3 text6 mt-3">Paquete Pro-Inversor</p>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$500 <small class="text-muted">/50 poiocoin </small></h1>
+              <p style="text-align: left">
+                Eres un experimentado invirtiendo en criptos,
+                <strong>PoioCoin</strong> es lo mejor
+              </p>
+              <button type="button" class="btn btn-lg btn-primary centrar">Comprar este Paquete!</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <p class="h5 font3 text6 mt-3">Master Inversor</p>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$1000 <small class="text-muted">/ 100 poiocoin</small></h1>
+              <p style="text-align: left">
+                Domina el mercado usando la mejor cripto,
+                <strong>PoioCoin</strong>
+              </p>
+
+              <button type="button" class="btn btn-lg btn-primary centrar">Comprar este Paquete!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5 pb-5">
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p class="h2 font3 text-center text6 mt-3">Ingresa tus datos</p>
+          <br /><br />
+          <input type="text" class="form-control" placeholder="Nombres y apellidos" />
+          <br /><br />
+          <input type="text" class="form-control" placeholder="Correo Electronico" />
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-5">
+          <p class="h2 font3 text-center text6 mt-3">Selecciona tu metodo de Pago</p>
+          <div class="card">
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <img src="./assets/img/Metodos de Pago/Paypal.webp" alt="" />
+                  <br />
+                  Tarjeta de Credito
+                </label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="card">
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <img src="./assets/img/Metodos de Pago/TarjetaC.webp" alt="" />
+                  <br />
+                  Tarjeta de Credito
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <button style="width: 200px" class="btn btn-success centrar py-2" type="submit">
+          Pagar <i class="bx bxs-credit-card"></i>
+        </button>
+      </div>
+      <br /><br /><br />
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid bg6 text-white">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5"><img class="centrar" src="./assets/img/logo-fondo.png" width="70%" /></div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3">Nuestros productos:</p>
+          <br />
+          <a class="btn-9" href="productos.html#planes"><i class="bx bx-chevron-right"></i> Planes de ahorro </a><br /><br />
+          <a class="btn-9" href="productos.html#tarjetas"><i class="bx bx-chevron-right"></i> Tarjetas</a><br /><br />
+          <a class="btn-9" href="productos.html#licencias"><i class="bx bx-chevron-right"></i> Licencias</a><br /><br />
+          <a class="btn-9" href="productos.html#depositar"><i class="bx bx-chevron-right"></i> Como depositar</a><br /><br />
+          <a class="btn-9" href="productos.html#presencia"><i class="bx bx-chevron-right"></i> Presencia Internacional</a
+          ><br /><br />
+          <a class="btn-9" href="productos.html#acciones"><i class="bx bx-chevron-right"></i> Adquiere Acciones</a><br /><br />
+          <a class="btn-9" href="productos.html#divisas"><i class="bx bx-chevron-right"></i> Cambio de Divisas</a><br /><br />
+          <a class="btn-9" href="productos.html#empresas"><i class="bx bx-chevron-right"></i> PoioCoin para empresas </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3">Contactanos:</p>
+          <br />
+          <a class="btn-9" href="nosotros.html#contacto"
+            ><i style="font-size: 22px" class="bx bxl-gmail"></i> - poiocoin0@gmail.com </a
+          ><br /><br />
+          <a class="btn-9" href="#"><i style="font-size: 28px" class="bx bxl-whatsapp"></i> +57 257 545 415</a><br /><br />
+          <p class="text-white"><i class="bx bx-chevron-right"></i> Nuestras redes:</p>
+          <br />
+          <div class="social-links2">
+            <a href="https://twitter.com/poiocoin" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/poiocoin0" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          </div>
+          <br />
+          <p class="h4 font3">Código QR:</p>
+          <br />
+          <img src="./assets/img/qr-code.svg" width="160px" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+          <p class="h4 font3 text-center">Nuestra App:</p>
+          <br />
+          <center>
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-primary text-white">Windows 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-primary text-white">Windows 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-8 text-white">Linux 32 Bits <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-8 text-white">Linux 64 Bits <i class="bx bxs-download"></i></a>
+            </div>
+            <br />
+            <div class="btn-group my-2">
+              <a href="#" class="btn btn-7 text-white">Mac OS <i class="bx bxs-download"></i></a>
+              <a href="#" class="btn btn-7 text-white">Mac iOS <i class="bx bxs-download"></i></a>
+            </div>
+            <br /><br /><br /><br />
+
+            <img class="centrar" src="./assets/img/btn1.png" width="50%" />
+          </center>
+        </div>
+        <div class="col-sm-12 p-2 text-center">
+          <p>
+            &copy; Copyright <strong><span>PoioCoin</span></strong
+            >. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #616161;
+  border-radius: 3px;
+}
+
+:root {
+  --color1: #ffdb44;
+  --color3: #ffb500;
+  --color4: #ed9a00;
+  --color5: #aa6000;
+  --color6: #3c3066;
+  --color7: #48708c;
+  --color8: #55c0b9;
+  --color9: #fff;
+  --color10: #242526;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color9) !important;
+}
+
+.text4 {
+  color: var(--color4) !important;
+}
+
+.text6 {
+  color: var(--color6) !important;
+}
+
+.text10 {
+  color: var(--color10) !important;
+}
+
+.text-link-6 {
+  color: var(--color6) !important;
+}
+
+.text-link-6:hover {
+  color: var(--color4) !important;
+}
+
+.text-link-7 {
+  color: var(--color6) !important;
+}
+
+.text-link-7:hover {
+  color: var(--color4) !important;
+}
+
+.bg5 {
+  background-color: var(--color5) !important;
+}
+
+.bg6 {
+  background-color: var(--color6) !important;
+}
+
+.bg9 {
+  background-color: var(--color9) !important;
+}
+
+.btn-6 {
+  background-color: var(--color6) !important;
+}
+
+.btn-6:hover {
+  background-color: var(--color4) !important;
+}
+
+.btn-7 {
+  background-color: var(--color7) !important;
+}
+
+.btn-7:hover {
+  background-color: var(--color8) !important;
+}
+
+.btn-8 {
+  background-color: var(--color4) !important;
+}
+
+.btn-8:hover {
+  background-color: var(--color6) !important;
+}
+
+.btn-9 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-9:hover {
+  color: var(--color4) !important;
+}
+
+/*Segunda Tipografia*/
+.font2 {
+  font-family: "Press Start 2P", cursive;
+}
+
+.font3 {
+  font-family: "Merienda", cursive;
+}
+
+.form-control,
+.btn {
+  border-radius: 50px;
+}
+
+.social-links {
+  margin-left: 20px;
+  min-width: 137px;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background-color: var(--color6) !important;
+  color: #fff;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background-color: var(--color4) !important;
+}
+
+.social-links2 {
+  min-width: 80px;
+  min-height: 50px;
+  margin-top: -15px;
+  margin-left: 22px;
+}
+
+.social-links2 a {
+  font-size: 18px;
+  display: inline-block;
+  background-color: var(--color4) !important;
+  color: #fff;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links2 a:hover {
+  background-color: var(--color5) !important;
+}
+
+.centrar {
+  display: block;
+  margin: auto;
+}
+
+#tabla-coin {
+  height: 500px;
+  overflow: auto;
+}
+
+#tabla-coin::-webkit-scrollbar {
+  width: 10px;
+}
+
+#tabla-coin::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 3px;
+}
